@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+
+$:.unshift Pathname.new(__FILE__).dirname.join('..', 'lib/omniplan2github').expand_path.to_s
+require "omniplan2github/issue"
+
+Op2ghissue::CLI.start
